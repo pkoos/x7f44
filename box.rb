@@ -16,7 +16,7 @@ class Box
     false
   end
 
-  def set_tiles()
+  def set_tiles
     @number_of_tiles.times do |i|
       @tiles << i + 1
     end
