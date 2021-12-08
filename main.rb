@@ -15,7 +15,7 @@ game=Game.new(box, dice)
 game.start!
 game.play until game.over?
 
-puts   game.results
+puts game.results
 
 
 
