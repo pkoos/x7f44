@@ -23,13 +23,17 @@ class Game
     dice.each(&:roll!)
   end
 
-  def play
-    box.display_tiles
+  def display_dice
     print "You rolled: "
     dice.each do |die|
       print "#{die.value} "
     end
     puts "\n"
+  end
+
+  def play
+    box.display_tiles
+    display_dice
     puts "Which tiles would you like to flip (separate by spaces): "
     tiles_to_flip = gets.chomp
     prepare_next_round
