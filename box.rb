@@ -31,7 +31,7 @@ class Box
   end
 
   def to_s
-    "Box"
+    "#{display_tiles}"
   end
 
 end

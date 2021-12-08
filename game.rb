@@ -37,7 +37,7 @@ class Game
   end
 
   def play
-    box.display_tiles
+    print "#{box}"
     display_dice
     collect_input
     prepare_next_round
