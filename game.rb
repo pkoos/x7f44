@@ -26,7 +26,7 @@ class Game
   def display_dice
     print "You rolled: "
     dice.each do |die|
-      print "#{die.value} "
+      print "#{die} "
     end
     puts "\n"
   end

@@ -14,12 +14,8 @@ class Die
     self.value = prng.rand(1..number_of_sides)
   end
 
-#
-#
-  # def to_s
-  #   value
-  # end
-#
-# end
+  def to_s
+    "#{self.value}"
+  end
 
 end
