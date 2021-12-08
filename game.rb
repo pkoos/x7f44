@@ -31,11 +31,15 @@ class Game
     puts "\n"
   end
 
+  def collect_input
+    puts "Which tiles would you like to flip (separate by spaces): "
+    tiles_to_flip = gets.chomp
+  end
+
   def play
     box.display_tiles
     display_dice
-    puts "Which tiles would you like to flip (separate by spaces): "
-    tiles_to_flip = gets.chomp
+    collect_input
     prepare_next_round
   end
 
