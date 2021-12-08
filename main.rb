@@ -11,6 +11,7 @@ N_SIDES = 6
 
 dice= (1..N_DICE).map { |i| Die.new(N_SIDES) }
 box= Box.new(NUM_T)
+box.set_tiles
 
 game=Game.new(box, dice)
 

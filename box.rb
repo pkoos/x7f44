@@ -5,9 +5,6 @@ class Box
   def initialize(number_of_tiles)
     @number_of_tiles = number_of_tiles
     @tiles = []
-    @number_of_tiles.times do |i|
-      @tiles << i + 1
-    end
     @shut_tiles = []
   end
 
@@ -17,6 +14,12 @@ class Box
 
   def can_flip_for?(value)
     false
+  end
+
+  def set_tiles()
+    @number_of_tiles.times do |i|
+      @tiles << i + 1
+    end
   end
 
   def getTiles
