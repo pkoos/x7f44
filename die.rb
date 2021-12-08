@@ -4,10 +4,10 @@ class Die
   attr_accessor :value
   attr_reader :prng
 
-  def initialize(number_of_sides)
+  def initialize(number_of_sides, prng)
     @number_of_sides = number_of_sides
     @value = 1
-    @prng = Random.new
+    @prng = prng
   end
 
   def roll!
