@@ -16,6 +16,7 @@ class Game
   end
 
   def start!
+    puts WELCOME_MESSAGE
     prepare_next_round
   end
 
