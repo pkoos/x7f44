@@ -30,10 +30,6 @@ class Box
     print "\n"
   end
 
-  def getTiles
-    @tiles
-  end
-
   def to_s
     "Box"
   end
